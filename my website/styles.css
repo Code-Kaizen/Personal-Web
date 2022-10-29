@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,200;1,300;1,400&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: poppins;
+}
+body {
+    width: 100%;
+    height: 200vh;
+    background: linear-gradient(to bottom right, #f8f8f8 -5%, #000000 130%) no-repeat;
+    padding: 0%;
+}
+nav {
+    padding: 0;
+    min-height: 80px;
+    border-bottom: red;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+.nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 6rem;
+}
+.nav-links h1{
+    font-size: 35px;
+    min-height: auto;
+    color: white;
+    letter-spacing: 4px;
+    text-shadow: 4px 2px 4px rgb(70, 69, 69);
+    transition: mymove ease-out 150ms;
+}
+@keyframes mymove {
+    from{
+        font-size: 0px;
+    }
+    to{
+        font-size: 35px;
+    }
+}
+.nav-links a {
+    text-decoration: none;
+    margin: 0 30px;
+    color: white;
+    font-size: 20px;
+    position: relative;
+    letter-spacing: 2px;
+}
+.nav-links li{
+    list-style-type: none;
+}
+.nav-links ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 20px;
+}
+.nav-links a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: rgb(192, 1, 1);
+    transition: width 0.5s ease-out;
+}
+.nav-links a:hover::before {
+    width: 100%;
+}
+.right-menu {
+    position: relative;
+    float: right;
+    height: fit-content;
+}
+.right-menu button {
+    background: transparent;
+    border: transparent;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    right: 2%;
+    bottom: 10%;
+    cursor: pointer;
+    padding-bottom: 10.8px;
+    letter-spacing: 2px;
+}
+span {
+    color: rgb(202, 4, 4);
+    font-weight: bolder;
+}
+.right-menu button::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2.5px;
+    background-color: rgb(192, 1, 1);
+    transition: width 0.5s ease-out;
+}
+.right-menu button:hover::before{
+    width: 100%;
+}
+.dropdown-menu a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: rgb(192, 1, 1);
+    transition: width 0.5s ease-out;
+}
+.dropdown-menu a:hover::before {
+    width: 100%;
+}
+.dropdown-menu svg {
+    width: 20px;
+}
+.dropdown-menu ul {
+    list-style-type: none;
+}
+.dropdown-menu a{
+    position: relative;
+    width: 40px;
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    left: 10%;
+}
+.dropdown-menu li{
+    margin: 20px 0;
+}
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    right: -3%;
+    min-width: 120px;
+    background: transparent;
+}
+.dropdown-menu a:hover {
+    background-color: transparent;
+    color: white;
+    animation: mymove 1s 0 ease-out;
+}
+.right-menu:hover .dropdown-menu{
+   display: block;
+}
+.right-menu:hover .right-menu button {
+    background-color: transparent;
+}
+.content {
+    margin-top: 170px;
+    float: left;
+    padding-left: 2rem;
+}
+.content h2{
+    color: white;
+    font-size: 35px;
+    letter-spacing: 2px;
+    text-shadow: 5px 2px 4px rgb(70, 69, 69);
+}
+.content p {
+    margin-top: 10px;
+    color: black;
+    font-size: 15px;
+    font-weight: 400;
+}
+#skills {
+    margin-top: 5px;
+    font-size: 18px;
+}
+.logo-container img {
+    min-width: 350px;
+}
+.logo-container {
+    float: right;
+    position: relative;
+    margin-top: 100px;
+    margin-right: 200px;
+}
+.content svg {
+    margin-right: 20px;
+    cursor: pointer;
+    min-height: 200px;
+}
+.footer {
+    position: fixed;
+    clear: both;
+    bottom: 0%;
+    left: 42%;
+    text-align: center;
+    color: white;
+    font-weight: 300;
+}
+.footer hr {
+    border-color: rgb(70, 69, 69);
+    height: 1px;
+    width: 250px;
+}
+.footer span {
+    color: black;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+.footer svg {
+    width: 15px;
+    margin-left: 3px;
+}
+a:active {
+    font-size: 18px;
+}
+.dropdown-menu a:active{
+    font-size: 17px;
+}
